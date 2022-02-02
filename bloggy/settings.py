@@ -33,9 +33,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env.str('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bloggyblogapp.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -160,6 +160,7 @@ AWS_DEFAULT_ACL = None
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
+#add region name to connect
 AWS_S3_REGION_NAME = 'us-east-2'
 AWS_S3_ADDRESSING_STYLE = 'virtual'
 
