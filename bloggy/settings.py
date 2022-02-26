@@ -18,7 +18,7 @@ import django_heroku
 #setting the environment variables----
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, True)
+    DEBUG=(bool, False)
 )
 environ.Env.read_env()
 #setting the environment variables END----
